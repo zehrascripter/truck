@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { trucks } from "@/app/utils/trucks";
 
-const Landing = () => {
+const Gallery = () => {
   return (
     <div>
       {/* ---------------------------home----------------------- */}
-      <div className="element pt-40">
+      <div className="element pt-40 w-full">
         <div className="w-[90%] m-auto text-white">
           <div className="flex flex-col md:flex-row justify-between">
             {/* -----------------------------left-------------------------------- */}
@@ -47,7 +47,7 @@ const Landing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {trucks.map((truck) => (
             <div key={truck.id}>
-              <img
+              <Image
                 src={truck.image}
                 alt={`Truck ${truck.id}`}
                 height={200}
@@ -62,4 +62,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Gallery;

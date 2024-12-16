@@ -1,13 +1,9 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Landing from "./components/Landing/page";
+import Services from "./Services/page";
 
 export default function Home() {
   return (
   <>
-  <Header/>
-<Landing/>
-<Footer/>
+<Services/>
   </>
   );
 }
