@@ -50,8 +50,8 @@ const Gallery = () => {
               <Image
                 src={truck.image}
                 alt={`Truck ${truck.id}`}
-                height={200}
-                width={100}
+                height={300}
+                width={400}
                 className="w-full h-full object-cover rounded"
               />
             </div>
